@@ -93,4 +93,18 @@ RwLock is ideal for operations that read more often than write. On the other han
 2. The lazy_static feature allows the creation of variables that function as singletons (there is only one instance of that class/struct in the program). 
 This is different from Java, where static variables can be changed. 
 By using lazy_static, the variable is initialized once and remains unchanged (immutable) throughout the program’s execution, helping to maintain thread safety during concurrent operations.
+
 #### Reflection Subscriber-2
+1. I explored the src/lib.rs file which is a default file in a Rust project. 
+This file is used to define modules and their settings. 
+Generally, lib.rs manages configurations, handles errors, and forms a web application with Rust using the appropriate crates and patterns.
+
+2. The implementation of the Observer design system simplifies the addition of features (such as subscriptions). 
+Each customer can independently subscribe to receive notifications. 
+The design system assists us in designing and modeling, as well as accelerating the development process. 
+The design system also combines the understanding and intuition of developers regarding the structure of code writing.
+
+3. Indeed, the generation of synthetic test data is highly beneficial, particularly when there’s a desire to avoid the hardcoding of placeholder data. 
+It provides an opportunity to evaluate the robustness of the implementation. 
+Furthermore, it allows for the execution of tests to ascertain if the use case aligns with the intended design.
+
