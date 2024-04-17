@@ -61,12 +61,12 @@ You can install Postman via this website: https://www.postman.com/downloads/
 ## Mandatory Checklists (Subscriber)
 -   [ ] Clone https://gitlab.com/ichlaffterlalu/bambangshop-receiver to a new repository.
 -   **STAGE 1: Implement models and repositories**
-    -   [ ] Commit: `Create Notification model struct.`
-    -   [ ] Commit: `Create SubscriberRequest model struct.`
-    -   [ ] Commit: `Create Notification database and Notification repository struct skeleton.`
-    -   [ ] Commit: `Implement add function in Notification repository.`
-    -   [ ] Commit: `Implement list_all_as_string function in Notification repository.`
-    -   [ ] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
+    -   [x] Commit: `Create Notification model struct.`
+    -   [x] Commit: `Create SubscriberRequest model struct.`
+    -   [x] Commit: `Create Notification database and Notification repository struct skeleton.`
+    -   [x] Commit: `Implement add function in Notification repository.`
+    -   [x] Commit: `Implement list_all_as_string function in Notification repository.`
+    -   [x] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
 -   **STAGE 3: Implement services and controllers**
     -   [ ] Commit: `Create Notification service struct skeleton.`
     -   [ ] Commit: `Implement subscribe function in Notification service.`
@@ -85,5 +85,12 @@ This is the place for you to write reflections:
 ### Mandatory (Subscriber) Reflections
 
 #### Reflection Subscriber-1
+1. RwLock and Mutex are two principles in Rust used to secure (synchronize) data accessed by multiple threads. 
+Each has its strengths and weaknesses. RwLock allows multiple threads to read data simultaneously, as long as no thread is writing. 
+Writing is an exclusive operation that can only be performed when the write lock is available (not in use). 
+RwLock is ideal for operations that read more often than write. On the other hand, Mutex only allows one thread to access data, introducing the concept of queuing and potentially slowing down the application.
 
+2. The lazy_static feature allows the creation of variables that function as singletons (there is only one instance of that class/struct in the program). 
+This is different from Java, where static variables can be changed. 
+By using lazy_static, the variable is initialized once and remains unchanged (immutable) throughout the program’s execution, helping to maintain thread safety during concurrent operations.
 #### Reflection Subscriber-2
